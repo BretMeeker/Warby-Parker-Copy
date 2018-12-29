@@ -6,12 +6,29 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/png" href="img/warby-parker-favicon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 
 	<!--HEADER-->
 	<header class="header">
+		<span class="header__logo">Warby Parker</span>
 
+		<nav class="header__nav">
+			<ul class="header__nav__list">
+				<li class="header__nav__item"><a class="header__nav__link" href="#">Eyeglasses</a></li>
+				<li class="header__nav__item"><a class="header__nav__link" href="#">Sunglasses</a></li>
+				<li class="header__nav__item"><a class="header__nav__link" href="#">Home Try-On</a></li>
+				<li class="header__nav__item"><a class="header__nav__link" href="#">Locations</a></li>
+			</ul>
+		</nav>
+
+		<div class="header__account">
+			<a class="header__account__search" href="#"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</a>
+			<a class="header__account__help" href="#">Help</a>
+			<a class="header__account__sign-in" href="#">Sign In</a>
+			<a class="header__account__cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+		</div>
 	</header>
 
 	<!--OFFER-HEADER-->
@@ -22,19 +39,30 @@
 	<!--HERO-->
 	<section class="hero">
 		<div class="hero__container hero__container--1">
-			<span class="hero__heading">Try frames at home - for free</span>
-
+			<span class="hero__heading hero__heading--1">Try frames at home - for free</span>
+			<span class="hero__button-container">
+				<a class="hero__button" href="#">Take a quiz</a>&nbsp;&nbsp;
+				<a class="hero__button" href="#">Browse frames</a>
+			</span>
 		</div>
 
 		<div class="hero__container hero__container--2">
-			<span class="hero__heading">Shop online</span>
-
+			<span class="hero__heading hero__heading--2">Shop online</span>
+			<span class="hero__button-container">
+				<a class="hero__button" href="#">Eyeglasses</a>&nbsp;&nbsp;
+				<a class="hero__button" href="#">Sunglasses</a>
+			</span>
 		</div>
 	</section>
 
 	<!--NEWSLETTER-->
 	<section class="newsletter">
-
+		<img class="newsletter__img" src="img/icon-plane.png">
+		Get the inside scoope on new frames, events, and more
+		<form class="newsletter__form">
+			<input class="newsletter__email" type="email" placeholder="Email">
+			<button class="newsletter__submit"><i class="fas fa-arrow-right"></i></button>
+		</form>
 	</section>
 
 	<!--NAV-FOOTER-->
@@ -42,57 +70,65 @@
 		<nav class="nav-footer__products">
 			<h4 class="nav-footer__nav__heading">Products</h4>
 			<ul class="nav-footer__nav__list">
-				<li class="nav-footer__nav__item">Eyeglasses</li>
-				<li class="nav-footer__nav__item">Sunglasses</li>
-				<li class="nav-footer__nav__item">Accessories</li>
-				<li class="nav-footer__nav__item">Gift cards</li>
-				<li class="nav-footer__nav__item">Monocle</li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Eyeglasses</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Sunglasses</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Accessories</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Gift cards</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Monocle</a></li>
 			</ul>
 		</nav>
 
 		<nav class="nav-footer__shop">
 			<h4 class="nav-footer__nav__heading">Shop Online</h4>
 			<ul class="nav-footer__nav__list">
-				<li class="nav-footer__nav__item">Try 5 for free</li>
-				<li class="nav-footer__nav__item">Download our app</li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Try 5 for free</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Download our app</a></li>
 			</ul>
 		</nav>
 
 		<nav class="nav-footer__visit">
 			<h4 class="nav-footer__nav__heading">Visit a Store</h4>
 			<ul class="nav-footer__nav__list">
-				<li class="nav-footer__nav__item">Find a location</li>
-				<li class="nav-footer__nav__item">Book an eye exam</li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Find a location</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Book an eye exam</a></li>
 			</ul>
 		</nav>
 
 		<nav class="nav-footer__education">
 			<h4 class="nav-footer__nav__heading">Education</h4>
 			<ul class="nav-footer__nav__list">
-				<li class="nav-footer__nav__item">Eyewear A to Z</li>
-				<li class="nav-footer__nav__item">How our glasses are made</li>
-				<li class="nav-footer__nav__item">How to get a prescription</li>
-				<li class="nav-footer__nav__item">Measure your PD</li>
-				<li class="nav-footer__nav__item">Our lenses</li>
-				<li class="nav-footer__nav__item">Flexible spending</li>
-				<li class="nav-footer__nav__item">Insurance</li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Eyewear A to Z</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">How our glasses are made</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">How to get a prescription</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Measure your PD</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Our lenses</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Flexible spending</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Insurance</a></li>
 			</ul>
 		</nav>
 
 		<nav class="nav-footer__about">
 			<h4 class="nav-footer__nav__heading">About Us</h4>
 			<ul class="nav-footer__nav__list">
-				<li class="nav-footer__nav__item">Our story</li>
-				<li class="nav-footer__nav__item">Buy a Pair, Give a Pair</li>
-				<li class="nav-footer__nav__item">Customer reviews</li>
-				<li class="nav-footer__nav__item">Jobs</li>
-				<li class="nav-footer__nav__item">Wearing Warby</li>
-				<li class="nav-footer__nav__item">Blog</li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Our story</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Buy a Pair, Give a Pair</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Customer reviews</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Jobs</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Wearing Warby</a></li>
+				<li class="nav-footer__nav__item"><a class="nav-footer__nav__link" href="#">Blog</a></li>
 			</ul>
 		</nav>
 
 		<div class="nav-footer__info">
-
+			<span class="nav-footer__info__heading">Need a hand?</span>
+			<span class="nav-footer__info__contact">We’re available by phone (888.492.7297) and chat every day, 9 a.m.–9 p.m. ET.</span>
+			<div class="nav-footer__info__link-container">
+				<a class="nav-footer__info__link" href="#"><img class="nav-footer__info__icon" src="img/icon-phone.png">Call</a>
+				<a class="nav-footer__info__link" href="#"><img class="nav-footer__info__icon" src="img/icon-faq.png">FAQ</a>
+				<a class="nav-footer__info__link" href="#"><img class="nav-footer__info__icon" src="img/icon-chat.png">Chat</a>
+				<a class="nav-footer__info__link" href="#"><img class="nav-footer__info__icon" src="img/icon-email.png">Email</a>
+				<a class="nav-footer__info__link" href="#"><img class="nav-footer__info__icon" src="img/icon-text.png">Text</a>
+			</div>
 		</div>
 	</footer>
 
