@@ -16,9 +16,10 @@ body {
 }
 
 :root {
+	--black: #333333;
 	--white: #ffffff;
 	--gray: #f8f8f8;
-	--gray-dim: #eeeeee;
+	--gray-dim: #d5d5d5;
 	--gray-dark: #676f78;
 	--blue-light: #00a2e1;
 	--blue-sat: #153071;
@@ -218,9 +219,19 @@ NEWSLETTER
 	border: 1px solid var(--gray-dim);
 	outline: none;
 	font-size: .6em;
+	color: var(--blue-dark);
 }
 
 .newsletter__email::placeholder {
+	color: var(--gray-dark);
+}
+
+.newsletter__email:focus {
+	background: var(--white);
+	transition: background-color .2s, color .2s;
+}
+
+.newsletter__email:focus::placeholder {
 	color: var(--gray-dim);
 }
 
@@ -231,6 +242,12 @@ NEWSLETTER
 	background: var(--blue-light);
 	border: none;
 	color: var(--white);
+	cursor: pointer;
+	transition: background-color .2s
+}
+
+.newsletter__submit:hover {
+	background: var(--blue-sat);
 }
 
 /*
@@ -289,7 +306,6 @@ NAV-FOOTER
 
 .nav-footer__nav__item {
 	line-height: 2.3em;
-	transition: transform .3s;
 }
 
 .nav-footer__nav__link {
@@ -298,11 +314,7 @@ NAV-FOOTER
 }
 
 .nav-footer__nav__link:hover {
-	color: var(--blue-dark);
-}
-
-.nav-footer__nav__item:hover {
-	transform: scale(1.02);
+	color: var(--black);
 }
 
 .nav-footer__info {
@@ -356,6 +368,68 @@ FOOTER
 */
 .footer {
 	width: 100%;
-	height: 150px;
+	height: 83px;
+	padding: 0 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background: var(--white);
+}
+
+.footer__country {
+}
+
+.footer__country:hover {
+	color: var(--gray-dark);
+}
+
+.footer__country__option {
+	padding: .8em 1.3em;
+	text-transform: uppercase;
+	color: var(--blue-dark);
+	text-decoration: none;
+	font-size: .7em;
+	letter-spacing: .1em;
+}
+
+.footer__country__option--current {
+	border: 1px solid var(--gray-dim);
+}
+
+.footer__social {
+	display: flex;
+	padding-left: 5em;
+}
+
+.footer__social__link {
+	padding: 0 1em;
+	color: var(--blue-dark);
+	font-size: 1.2em;
+}
+
+.footer__social__link:hover {
+	color: var(--black);
+}
+
+.footer__social__icon {
+	
+}
+
+.footer__nav {
+
+}
+
+.footer__nav__list {
+	display: flex;
+	list-style: none;
+}
+
+.footer__nav__link {
+	font-size: .75em;
+	text-decoration: none;
+	color: var(--gray-dark);
+}
+
+.footer__nav__link:hover {
+	color: var(--blue-dark);
 }
