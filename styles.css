@@ -66,6 +66,10 @@ HEADER
 	font-size: .8em;
 }
 
+.header__nav__link:hover {
+	color: var(--gray-dim);
+}
+
 .header__account {
 	margin-left: auto;
 	font-size: .8em;
@@ -80,12 +84,20 @@ HEADER
 	border-right: 1px solid var(--blue-dark);
 }
 
+.header__account__search:hover {
+	color: var(--gray-dim);
+}
+
 .header__account__help {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	text-decoration: none;
 	color: var(--blue-dark);
 	text-transform: uppercase;
+}
+
+.header__account__help:hover {
+	color: var(--gray-dim);
 }
 
 .header__account__sign-in {
@@ -95,10 +107,18 @@ HEADER
 	text-transform: uppercase;
 }
 
+.header__account__sign-in:hover {
+	color: var(--gray-dim);
+}
+
 .header__account__cart {
 	text-decoration: none;
 	color: var(--blue-dark);
 	text-transform: uppercase;
+}
+
+.header__account__cart:hover {
+	color: var(--gray-dim);
 }
 
 /*
@@ -359,6 +379,15 @@ NAV-FOOTER
 	color: var(--gray-dark);
 }
 
+.nav-footer__info__link:hover {
+	color: var(--black);
+}
+
+.nav-footer__info__link:hover .nav-footer__info__icon {
+	transform: scale(1.14);
+	transition: transform .2s;
+}
+
 .nav-footer__info__icon {
 	width: 2.7em;
 }
@@ -390,6 +419,11 @@ FOOTER
 	text-decoration: none;
 	font-size: .7em;
 	letter-spacing: .1em;
+	border: 1px solid transparent;
+}
+
+.footer__country__option:hover {
+	border: 1px solid var(--gray-dim);
 }
 
 .footer__country__option--current {
@@ -398,7 +432,7 @@ FOOTER
 
 .footer__social {
 	display: flex;
-	padding-left: 5em;
+	padding-left: 200px;
 }
 
 .footer__social__link {
@@ -420,11 +454,13 @@ FOOTER
 }
 
 .footer__nav__list {
+	padding: 0;
 	display: flex;
 	list-style: none;
 }
 
 .footer__nav__link {
+	padding: 0 0 0 1.6em;
 	font-size: .75em;
 	text-decoration: none;
 	color: var(--gray-dark);
